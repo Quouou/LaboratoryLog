@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Benedicto_Activity5.MainPage"
+             Title="MainPage">
+    
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30">
+            <Image x:Name="ccslogo" 
+                   Source="ccslogo.png" 
+                   HeightRequest="200" 
+                   HorizontalOptions="Center"></Image>
+
+            <Label Text="COLLEGE OF COMPUTER STUDIES" 
+                   FontSize="Large" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"></Label>
+
+            <Label Text="Laboratory Usage Tracker" 
+                   FontSize="Medium"
+                   HorizontalTextAlignment="Center"></Label>
+
+            <Button Text="Proceed" 
+                    BackgroundColor="#83C63B" 
+                    WidthRequest="150" 
+                    HorizontalOptions="Center" ></Button>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

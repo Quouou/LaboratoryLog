@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Benedicto_Activity5.Faculty"
+             Title="Faculty">
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Label Text="Faculty Log" 
+               FontSize="Medium" 
+               HorizontalTextAlignment="Center"/>
+
+        <Entry x:Name="FacultyDateName" 
+               FontSize="Small"
+               HorizontalOptions="Start"
+               Placeholder="Name"
+               WidthRequest="500"
+               HeightRequest="50"/>
+
+        <Entry x:Name="FacultyDate"
+               FontSize="Small"
+               HorizontalOptions="Start"
+               Placeholder="Date"
+               WidthRequest="500"
+               HeightRequest="50"/>
+
+        <Button Text="Submit"
+                BackgroundColor="#83C63B"
+                HorizontalOptions="Start"
+                WidthRequest="500"
+                HeightRequest="50"/>
+
+        <Button Text="Edit"
+                BackgroundColor="#83C63B"
+                HorizontalOptions="Start"
+                WidthRequest="500"
+                HeightRequest="50"/>
+
+        <Button Text="Delete"
+                BackgroundColor="#83C63B"
+                HorizontalOptions="Start"
+                WidthRequest="500"
+                HeightRequest="50"/>
+
+        <Image x:Name="DataGridPhoto" 
+                   Source="dgv.png" 
+                   HeightRequest="280"
+                   Margin="590,-350,0,0"></Image>
+
+
+        
+        <Button Text="Home"
+                BackgroundColor="#83C63B"
+                HorizontalOptions="End"
+                Margin="0,200,0,0"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

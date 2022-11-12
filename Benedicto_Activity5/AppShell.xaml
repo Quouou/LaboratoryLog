@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Benedicto_Activity5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Benedicto_Activity5"
+    xmlns:local="clr-namespace:Benedicto_Activity5"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.NavBarIsVisible="False">
+
+
+    <FlyoutItem Title="Start">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}"/>
+        </Tab>
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Home">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:Home}"/>
+        </Tab>
+    </FlyoutItem>
+    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Student"
+             Icon="student.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Student}"/>
+        </Tab>
+        
+        <Tab Title="Faculty"
+             Icon="admin.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Faculty}"/>
+        </Tab>
+
+        <Tab Title="Staff"
+             Icon="admin.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Staff}"/>
+        </Tab>
+
+        <Tab Title="Visitors"
+             Icon="admin.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Visitors}"/>
+        </Tab>
+        
+    </FlyoutItem>
+
+</Shell>
